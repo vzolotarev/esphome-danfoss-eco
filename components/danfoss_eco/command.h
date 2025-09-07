@@ -35,7 +35,7 @@ namespace esphome
             }
         };
 
-        class CommandQueue : public esphome::esp32_ble_tracker::Queue<Command>
+        class CommandQueue : public esphome::esp32_ble_tracker::Queue
         {
         public:
             bool is_empty() { return this->q_.empty(); }
